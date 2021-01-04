@@ -1,0 +1,17 @@
+<!--==========================
+    HERO SECTION Section
+============================-->
+	<header id="hero">
+		<div class="container">
+			<div class="intro-text">
+					{{#if sessionFlash.message}}
+						<div class="{{sessionFlash.type}}">
+							{{sessionFlash.message}}
+						</div>
+					{{/if}}
+				<h1 class="text-white">WELCOME TO THE NEW WORLD</h1>
+				<p>nothing will be the same anymore</p>
+				<a href="blog"><button class="main-btn" style="border-radius: 5cm; font-size:small">Get Started</button></a>
+			</div>
+		</div>
+	</header>

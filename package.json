@@ -1,0 +1,33 @@
+{
+  "name": "determined_node_begin",
+  "version": "1.0.0",
+  "description": "NODE TRIAL APP",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.10",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "heroku": "^7.42.13",
+    "method-override": "^3.0.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.28"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tarik-fi/trail_blog.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}

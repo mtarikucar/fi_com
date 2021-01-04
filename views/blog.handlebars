@@ -1,0 +1,83 @@
+<!--==========================
+    INSIDE HERO SECTION Section
+============================-->
+<section class="page-image page-image-blog md-padding">
+	<h1 class="text-white text-center">FI.COM</h1>
+</section>
+
+<!--==========================
+    Contact Section
+============================-->
+<section id="blog" class="md-padding">
+	<div class="container">
+		
+		<main id="main" class="col-lg-12">
+			{{#if sessionFlash.message}}
+			<div class="{{sessionFlash.type}}">
+				{{sessionFlash.message}}
+			</div>
+			{{/if}}
+			<div class="row">
+				{{#each posts}}
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img" style="border-radius:50px;">
+							<a href="/posts/{{_id}}"><img src="{{post_img}}" style="border-radius: 12px;"
+									class="img-fluid"></a>
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fas fa-users"></i><span class="writer">{{author.username}}</span></li>
+								<li><i class="fas fa-clock"></i><span
+										class="writer">{{generateDate date "MMM DD YYYY"}}</span></li>
+							</ul>
+							<a href="/posts/{{_id}}">
+								<h3>{{title}}</h3>
+							</a>
+							<p>{{content}}</p>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</main>
+
+		{{!-- <aside id="aside" class="col-md-4">
+
+				<div class="widget">
+					<div class="widget-search">
+						<input class="search-input form-control" type="text" placeholder="Search">
+						<button class="search-btn" type="button"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+				<!-- /Search -->
+
+
+				<!-- Category -->
+				<div class="widget">
+					<h3 class="mb-3">Categories</h3>
+					<div class="widget-category">
+						<a href="#">Web Design<span>(7)</span></a>
+						<a href="#">Marketing<span>(142)</span></a>
+						<a href="#">Web Development<span>(74)</span></a>
+						<a href="#">Branding<span>(60)</span></a>
+						<a href="#">Photography<span>(5)</span></a>
+					</div>
+				</div>
+				<!-- /Category -->
+
+
+				<!-- /single post -->
+
+		</div>
+		<!-- /Posts sidebar -->
+
+		</aside>
+ --}}
+
+
+	</div>
+
+	</div>
+</section>
